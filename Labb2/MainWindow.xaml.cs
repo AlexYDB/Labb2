@@ -20,9 +20,21 @@ namespace Labb2
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
+            
         }
+        public void Generate_Click(object sender, RoutedEventArgs e)
+        {
+          
+            MovieList film = new MovieList();
+            string savedHistory = film.FilmLista();
+            MessageBox.Show(username.Text + ", du borde se:\n" + savedHistory);
+            History.Items.Add(savedHistory);
+        }
+
+    
     }
 }
