@@ -68,8 +68,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Movie.cs" />
     <Compile Include="MovieList.cs" />
-    <Compile Include="MovieHistory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
